@@ -78,6 +78,7 @@ a{
 
 .main{
     text-align: center;
+    padding: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -144,6 +145,127 @@ a{
         grid-column: 2/4;   
         grid-row: 5/6;
     }
+}
+
+/* NOSOTROS */
+
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);   
+    align-items: center;
+    gap: 3rem;
+}
+
+@media(min-width: 768px){
+    
+    .nosotros{
+        grid-template-columns: repeat(2,1fr);   
+    }
+}
+
+
+.nosotros__gp p{
+    color: var(--blanco);
+    text-align: start;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* COMPRAR */
+
+.comprar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media(min-width: 768px){
+    .comprar{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.comprar__gp{
+
+}
+
+.comprar__icono{
+   
+}
+
+.comprar__h3{
+    color:var(--secundario);
+    font-size: 2.4rem;
+}
+
+.comprar__p{
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+
+
+/* PRODUCTO */
+
+.camisa{
+    display: grid;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media(min-width: 768px){
+   .camisa{
+    grid-template-columns: repeat(2,1fr);
+   }
+}
+
+.camisa__contenido{
+
+}
+
+.camisa__parrafo{
+    color: var(--blanco);
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+}
+
+.formulario__campo{
+    border: 1rem solid var(--primarioOscuro);
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+@media(max-width: 768px){
+    .formulario__campo{
+        grid-column: 1 / 3;
+    }
+}
+
+.formulario__submit{
+    grid-column: 1/3;
+    padding: 1.5rem;
+    background-color: var(--secundario);
+    border: none;
+    transition: background-color .3s ease;
+}
+
+.formulario__submit:hover{
+    background-color: var(--negro);
+    color: var(--secundario);
 }
 
 .footer{
